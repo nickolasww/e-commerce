@@ -1,21 +1,33 @@
 import React from 'react'
-import {useForm, SubmitHandler} from  'react-hook-form'
+import {Path, useForm, SubmitHandler, UseFormRegister} from  'react-hook-form'
 
-interface IFormInput{ 
-  firstname: string; 
-  lastname: string;
-  age: number;
+interface IFormValues{ 
+  "Firstnae": string;
+  age: number
 }
 
+
+type InputProps = { 
+  label: Path<IFormValues>;
+  register: UseFormRegister<IFormValues>;
+  required: boolean;
+}
+
+
+const input =({label, register, required}: InputProps) => (
+  <>
+    <label>{label}</label>
+    <input {...register(label, {required})}/>
+  </>
+)
+
+
 const BiodataForm = () => {
-  const {register,handleSubmit} = useForm<IFormInput>(); 
-  const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data); 
+  const {register,handleSubmit} = useForm<IFormValues>(); 
+  const onSubmit: SubmitHandler<IFormValues> = (data) => console.log(data); 
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("firstname", {required: true, maxLength:5})} className='border-2 border-black'/>
-      <input {...register("lastname", {pattern: /^[A-Za-z]+$/i})} className=""/>
-      <input type="number" {...register("age", {min:18, max:99})} className=''/>
       <input type="submit"/> 
     </form>
   )
