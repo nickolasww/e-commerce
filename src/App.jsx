@@ -1,14 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Component from './components'
+import HomePage from './pages/Home/partials/index'
+import Card from './components/card/index'
+import Input from './components/input/index'
+import Navbar from './components/navbar/index'
 
 function App() {
 
   return (
     <>
       <div>
-        <Component />
+
       </div>
     </>
   )
