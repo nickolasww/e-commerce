@@ -1,15 +1,13 @@
-import { useState } from 'react'
 import HomePage from './pages/Home/partials/index'
-import Card from './components/card/index'
-import Input from './components/input/index'
-import Navbar from './components/navbar/index'
+import Register from './pages/register/partials/index'
 
 function App() {
 
   return (
     <>
       <div>
-        <Navbar />
+        {/* <HomePage/> */}
+        <Register/>
       </div>
     </>
   )

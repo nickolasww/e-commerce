@@ -1,23 +1,27 @@
-import React from 'react'
+import React from "react";
 import { SlBasket } from "react-icons/sl";
 import { MdFavoriteBorder } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className='mt-5 '>
-      {/* <h1 className=''>Ww's Market</h1> */}
-      <div className='flex gap-10 justify-center items-center'> 
-          <p>Home</p>
-          <p>Contact</p>
-          <p>About</p>
-          <p>Sign Up</p>
-        {/* <div className='flex gap-10'> 
+    <header className="p-7 border-b-2 border-gray-200">
+      <div className="mx-32 flex justify-stretch items-center">
+        <a href="" className="font-bold text-3xl">
+          Ww's Market
+        </a>
+        <ul className="flex gap-24 cursor-pointer text-lg">
+          <li className="hover:underline">Home</li>
+          <li className="hover:underline">Contact</li>
+          <li className="hover:underline">About</li>
+          <li className="hover:underline">Sign Up</li>
+        </ul>
+        <div className="flex gap-10 ">
           <MdFavoriteBorder />
           <SlBasket />
-        </div> */}
+        </div>
       </div>
-    </div>
-  )
-}
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;
