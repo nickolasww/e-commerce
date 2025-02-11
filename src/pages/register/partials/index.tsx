@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../../components/navbar";
 import Input from "../../../components/input";
 
+
 const Register = () => {
   return (
     <header className="">

@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <div>
+        <img src={Side} alt="side"/> 
         {/* <HomePage/> */}
         <Register/>
       </div>
