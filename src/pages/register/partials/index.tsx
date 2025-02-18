@@ -1,6 +1,8 @@
-import React from "react";
+import * as React from "react";
+
 import Navbar from "../../../components/navbar";
 import Input from "../../../components/input";
+import Footer from "../../../components/footer/index"
 
 
 const Register = () => {
@@ -36,6 +38,7 @@ const Register = () => {
           </p>
         </div>
       </div>
+      <Footer/>
     </header>
   );
 };
