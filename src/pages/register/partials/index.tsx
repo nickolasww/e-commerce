@@ -3,6 +3,8 @@ import * as React from "react";
 import Navbar from "../../../components/navbar";
 import Input from "../../../components/input";
 import Footer from "../../../components/footer/index"
+// @ts-ignore
+import Registerimg from "../../../../src/assets/RegisterImg.svg"
 
 
 const Register = () => {
@@ -11,7 +13,7 @@ const Register = () => {
       <Navbar />
       <div className="flex justify-center items-center">
         <div className="w-">
-          <img src="" alt="" className="" />
+          <img src={Registerimg} alt="" className="" />
         </div>
 
         <div className="">
