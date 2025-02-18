@@ -8,6 +8,12 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
 
+import Today from "../../../pages/today/partials/index"
+import ThisMonth from "../../../pages/thismonth/partials/index"
+import OurProducts from "../../../pages/ourproducts/partials/index"
+import Featured from "../../../pages/featured/partials/index"
+
+
 const HomePage = () => {
   return (
     <header className="">
@@ -43,14 +49,33 @@ const HomePage = () => {
           </a>
         </div>
 
+        <div className="flex justify-center  items-center ">
+          <Today/>
+        </div>
+
         <div className="flex justify-center items-center p-10">
         <Categories />
         </div>
+
+        <div className="flex justify-center items-center p-10">
+          <ThisMonth />
+        </div>
+
+        <div className="flex justify-center items-center p-10">
+          <OurProducts />
+        </div>
+
+        <div className="flex justify-center items-center p-10">
+          <Featured />
+        </div>
+
+
+
       </div>
 
       <div>
 
-        <div className="flex justify-center items-center gap-36">
+        <div className="flex justify-center items-center gap-36 p-32">
           <div className="flex flex-col justify-center items-center ">
           <TbTruckDelivery className="text-6xl border-2 rounded-full border-black bg-gray-300 p-2"/>
           <h1 className="text-xl font-bold">
