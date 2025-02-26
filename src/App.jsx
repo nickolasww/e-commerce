@@ -1,8 +1,9 @@
-import HomePage from './pages/Home/partials/index'
-import Register from './pages/Register/partials/index'
-import Login from './pages/Login/partials/index'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from './pages/About/partials/index'
+
+import HomePage from "./pages/Home/partials/index"
+import About from "./pages/about/partials/index"
+import Register from "./pages/register/partials/index"
+import Login from "./pages/login/partials/index"
 
 function App() {
 
