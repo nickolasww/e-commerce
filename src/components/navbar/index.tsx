@@ -10,7 +10,7 @@ import BCCLOGO from "../../assets/icon/LogoBcc.png";
 
 const Navbar = () => {
   return (
-    <header className="border-b-2 border-gray-200">
+    <header className="border-b-2 border-gray-200 pt-5">
       <div className="mx-24 flex justify-between items-center">
         <a href="/" className="cursor-pointer w-20"> 
          <img src={BCCLOGO} alt="BCC LOGO"/> 
