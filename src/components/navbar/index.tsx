@@ -4,6 +4,8 @@ import Input from "../../components/input";
 
 import { SlBasket } from "react-icons/sl";
 import { MdFavoriteBorder } from "react-icons/md";
+import { IoMdSearch } from "react-icons/io";
+
 
 // @ts-ignore
 import BCCLOGO from "../../assets/icon/LogoBcc.png";
@@ -38,7 +40,16 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="flex gap-10 justify-center items-center ">
-          <Input type="text" placeholder="Search" className="border-2 border-gray-300 rounded-lg p-2 focus:outline-none"/>
+          
+          <div className="flex items-center justify-center border-2 border-gray-300 rounded-lg p-2 group">
+            <Input type="text" placeholder="Search" className=" w-0 p-0 group-hover:w-40 group-hover:px-2 duration-200 transition-all focus:outline-none"/>
+            <IoMdSearch className="text-2xl "/>
+          </div>
+
+          <div>
+
+          </div>
+          
           <MdFavoriteBorder className="text-2xl cursor-pointer" />
           <SlBasket className="text-2xl cursor-pointer" />
         </div>

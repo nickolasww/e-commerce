@@ -4,6 +4,7 @@ import HomePage from "./pages/Home/partials/index"
 import About from "./pages/about/partials/index"
 import Register from "./pages/register/partials/index"
 import Login from "./pages/login/partials/index"
+import Contact from "./pages/contact/index"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage/>} />
                 <Route path="/About" element={<About/>} />
+                <Route path="/Contact" element={<Contact/>} />
                 <Route path="/register" element={<Register/>} />
                 <Route path="/login" element={<Login/>} />
             </Routes>
